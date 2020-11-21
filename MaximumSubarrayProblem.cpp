@@ -38,7 +38,7 @@ int number;
 
 msp M;
 	M = FindMaximumSubarray(SubArray, 0, SubArray.size()-1);
-	printf("Buy on day %d\nSell on day %d\nProfit:%d\n",M.Max_left(),M.Max_right(),M.Sum());
+	printf("Buy on day %d\nSell on day %d\nProfit:%d\n",M.Max_left(),M.Max_right()+1,M.Sum());
 	return 0;
 }
 msp BruteForce(vector<int> SubArray,int low, int high)
@@ -51,7 +51,7 @@ int Start,End;
 			if(Maximum < accumulate(i,j,0))
 			{
 				Maximum = accumulate(i,j,0);
-				Start = i - SubArray.begin() + 1;
+				Start = i - SubArray.begin();
 				End = j - SubArray.begin();
 			}
 msp m1(Start,End,Maximum);
