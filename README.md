@@ -2,7 +2,7 @@
 Buy low Sell high (find the best day to buy &amp; sell)<br />
 Enter the stock price each day in MSPdata.txt.<br />
 <br />
-Excution example:<br />
+Execution example:<br />
 command line:<br />
 % make<br />
 % ./MaximumSubarrayProblem.out MSPdata.txt<br />
